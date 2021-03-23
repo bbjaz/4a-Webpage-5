@@ -1,8 +1,124 @@
 /* FONTS **********************************/
 
 @font-face {
-	font-family: myFirstFont;
-	src: url(sansation_light.woff);
+	font-family: Amatic;
+	src: url(Amatic_SC/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+	font-family: AmaticBold;
+	src: url(Amatic_SC/AmaticSC-Bold.ttf);
 }
 
 /*****************************************/
+
+/* IMAGE SLIDER **************************/
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0%;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+    0% {
+      left: 0%;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+}
+/****************************************/
+
+body {
+  display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(
+  45deg,
+  #FAEBD7,
+  #FAEBD7 20px,
+  #f7e8d5 20px,
+  #f7e8d5 40px
+);
+  font-family: Amatic;
+
+}
+
+#container {
+  postion: relative;
+  top: 100px;
+  background: #FFEBCD;
+  width: 500px;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-image img {
+  width: 300px;
+  height: 300px;
+}
+
+#content-box {
+  background: #FFF;
+  padding: 15px;
+  margin: 1px;
+  font-family: AmaticBold;
+  box-shadow: 6px 6px 6px 3px rgba(0, 0, 0, .05);
+}
+
+ul {
+  position: relative;
+  margin-bottom: 35px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+}
+
+a {
+  font-family: AmaticBold;
+  text-decoration: none;
+  background: #FFF;
+  padding: 20px;
+  color: #000;
+}
+
+a:hover {
+  background: #DEB887;
+  color: #FFF;
+}
